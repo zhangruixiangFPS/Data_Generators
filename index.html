@@ -536,19 +536,6 @@
         </div>
       </div>
       
-      <!-- 数据统计 -->
-      <div class="mt-24">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">性能数据</h2>
-          <p class="text-gray-light">洛谷数据生成器在不同规模下的性能表现</p>
-        </div>
-        
-        <div class="bg-dark-light rounded-xl p-6 border border-white/5 shadow-lg">
-          <div class="h-80">
-            <canvas id="performanceChart"></canvas>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -562,58 +549,48 @@
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- 文档卡片 1 -->
-        <div class="bg-dark rounded-xl overflow-hidden group hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
-          <div class="h-40 bg-primary/20 flex items-center justify-center">
-            <i class="fa fa-book text-primary text-6xl"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">用户手册</h3>
-            <p class="text-gray-light mb-4">详细介绍了洛谷题目数据生成器的各项功能和使用方法，适合新手入门。</p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-light">32 章节</span>
-              <a href="#" class="text-primary hover:text-primary/80 flex items-center">
-                <span>查看详情</span>
-                <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
-              </a>
-            </div>
-          </div>
-        </div>
         
-        <!-- 文档卡片 2 -->
-        <div class="bg-dark rounded-xl overflow-hidden group hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
-          <div class="h-40 bg-secondary/20 flex items-center justify-center">
-            <i class="fa fa-video-camera text-secondary text-6xl"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">视频教程</h3>
-            <p class="text-gray-light mb-4">通过视频演示，直观地展示如何使用洛谷题目数据生成器完成各类题目数据的生成。</p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-light">18 视频</span>
-              <a href="#" class="text-secondary hover:text-secondary/80 flex items-center">
-                <span>查看详情</span>
-                <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
-              </a>
+      </div>
+      
+      <!-- 文章链接 -->
+      <div class="mt-16 max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 text-center">精选文章</h3>
+        <div class="space-y-4">
+          <a href="https://www.luogu.me/article/6uiax10m" target="_blank" class="block p-4 bg-dark rounded-lg hover:bg-dark-light transition-colors border border-white/5 hover:border-primary/30">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                <i class="fa fa-file-text-o text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-medium">CYaRon 教程</h4>
+                <p class="text-sm text-gray-light mt-1">本文详细介绍了CYaRon的使用方法，适合想要深入了解的用户。</p>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <!-- 文档卡片 3 -->
-        <div class="bg-dark rounded-xl overflow-hidden group hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
-          <div class="h-40 bg-accent/20 flex items-center justify-center">
-            <i class="fa fa-code text-accent text-6xl"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-3">API 参考</h3>
-            <p class="text-gray-light mb-4">详细介绍了洛谷题目数据生成器的 API 接口，适合需要集成到其他系统的开发者。</p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-light">56 接口</span>
-              <a href="#" class="text-accent hover:text-accent/80 flex items-center">
-                <span>查看详情</span>
-                <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
-              </a>
+          </a>
+          
+          <a href="https://www.luogu.me/article/l11brxda" target="_blank" class="block p-4 bg-dark rounded-lg hover:bg-dark-light transition-colors border border-white/5 hover:border-primary/30">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center">
+                <i class="fa fa-file-text-o text-secondary"></i>
+              </div>
+              <div>
+                <h4 class="font-medium">CYaRon 入门教程 | 快速配置题目数据</h4>
+                <p class="text-sm text-gray-light mt-1">从零开始，教你如何快速配置和使用CYaRon生成题目数据。</p>
+              </div>
             </div>
-          </div>
+          </a>
+          
+          <a href="https://github.com/luosiwei-cmd/CarYon/wiki" target="_blank" class="block p-4 bg-dark rounded-lg hover:bg-dark-light transition-colors border border-white/5 hover:border-primary/30">
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center">
+                <i class="fa fa-github text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-medium">CYaRon Github Wiki</h4>
+                <p class="text-sm text-gray-light mt-1">CYaRon项目的官方Wiki，包含了详细的技术文档和使用指南。</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       
@@ -805,29 +782,38 @@
         <div>
           <h4 class="text-lg font-semibold mb-6">联系我们</h4>
           <ul class="space-y-3">
-            <li class="flex items-start space-x-3">
-              <i class="fa fa-envelope text-primary mt-1"></i>
-              <span class="text-gray-light">support@luogu.com</span>
+            <li class="flex items-center space-x-2">
+              <i class="fa fa-envelope text-primary"></i>
+              <a href="mailto:support@luogu.com" class="text-gray-light hover:text-white transition-colors">support@luogu.com</a>
             </li>
-            <li class="flex items-start space-x-3">
-              <i class="fa fa-map-marker text-primary mt-1"></i>
-              <span class="text-gray-light">北京市海淀区中关村大街1号</span>
+            <li class="flex items-center space-x-2">
+              <i class="fa fa-telegram text-primary"></i>
+              <a href="https://t.me/luogu" class="text-gray-light hover:text-white transition-colors">@luogu</a>
             </li>
-            <li class="flex items-start space-x-3">
-              <i class="fa fa-phone text-primary mt-1"></i>
-              <span class="text-gray-light">+86 10-12345678</span>
+            <li class="flex items-center space-x-2">
+              <i class="fa fa-github text-primary"></i>
+              <a href="https://github.com/luogu" class="text-gray-light hover:text-white transition-colors">GitHub</a>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa fa-wechat text-primary"></i>
+              <span class="text-gray-light">Data_Creator官方公众号</span>
             </li>
           </ul>
         </div>
       </div>
       
       <div class="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-light text-sm mb-4 md:mb-0">© 2025 洛谷题目数据生成器. 保留所有权利.</p>
+        <p class="text-gray-light text-sm mb-4 md:mb-0">© 2025 zhangruixiangFPS(Github). 保留所有权利.</p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-light hover:text-white text-sm transition-colors">隐私政策</a>
           <a href="#" class="text-gray-light hover:text-white text-sm transition-colors">服务条款</a>
-          <a href="#" class="text-gray-light hover:text-white text-sm transition-colors">Cookie 设置</a>
+          <a href="#" class="text-gray-light hover:text-white text-sm transition-colors">Cookie 政策</a>
         </div>
+      </div>
+      
+      <!-- 网页访问计数器 -->
+      <div class="mt-6 text-center">
+        <img src="https://w.saobby.com/w/j5x6f6fs" alt="网页访问计数器">
       </div>
     </div>
   </footer>
@@ -838,11 +824,11 @@
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        navbar.classList.add('py-2');
-        navbar.classList.remove('py-3');
+        navbar.classList.add('bg-dark/95');
+        navbar.classList.add('shadow-lg');
       } else {
-        navbar.classList.add('py-3');
-        navbar.classList.remove('py-2');
+        navbar.classList.remove('bg-dark/95');
+        navbar.classList.remove('shadow-lg');
       }
     });
     
@@ -872,7 +858,6 @@
     const gridColor = document.getElementById('grid-color');
     const bgColor = document.getElementById('bg-color');
     const resetBg = document.getElementById('reset-bg');
-    const body = document.body;
     
     bgToggle.addEventListener('click', () => {
       bgOptions.classList.toggle('hidden');
@@ -883,10 +868,17 @@
       const color = gridColor.value;
       const bg = bgColor.value;
       
-      body.style.backgroundImage = `linear-gradient(${color} 1px, transparent 1px),
-                                    linear-gradient(90deg, ${color} 1px, transparent 1px)`;
-      body.style.backgroundSize = `${density}px ${density}px`;
-      body.style.backgroundColor = bg;
+      document.documentElement.style.setProperty('--grid-size', `${density}px`);
+      document.documentElement.style.setProperty('--grid-color', color);
+      document.documentElement.style.setProperty('--bg-color', bg);
+      
+      document.querySelector('.bg-grid').style.backgroundImage = `
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px)
+      `;
+      document.querySelector('.bg-grid').style.backgroundSize = `${density}px ${density}px`;
+      
+      document.body.style.backgroundColor = bg;
     }
     
     gridDensity.addEventListener('input', updateBackground);
@@ -895,98 +887,4 @@
     
     resetBg.addEventListener('click', () => {
       gridDensity.value = 20;
-      gridColor.value = 'rgba(255, 255, 255, 0.05)';
-      bgColor.value = '#1D2129';
-      updateBackground();
-    });
-    
-    // 性能图表
-    const ctx = document.getElementById('performanceChart').getContext('2d');
-    const performanceChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['1e3', '1e4', '1e5', '1e6', '1e7'],
-        datasets: [
-          {
-            label: '生成时间 (秒)',
-            data: [0.02, 0.15, 1.2, 12.5, 125],
-            borderColor: '#165DFF',
-            backgroundColor: 'rgba(22, 93, 255, 0.1)',
-            tension: 0.4,
-            fill: true
-          },
-          {
-            label: '内存占用 (MB)',
-            data: [5, 15, 60, 250, 1200],
-            borderColor: '#722ED1',
-            backgroundColor: 'rgba(114, 46, 209, 0.1)',
-            tension: 0.4,
-            fill: true
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: '数据规模',
-              color: '#C9CDD4'
-            },
-            ticks: {
-              color: '#C9CDD4'
-            },
-            grid: {
-              color: 'rgba(255, 255, 255, 0.05)'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: '值',
-              color: '#C9CDD4'
-            },
-            ticks: {
-              color: '#C9CDD4'
-            },
-            grid: {
-              color: 'rgba(255, 255, 255, 0.05)'
-            }
-          }
-        },
-        plugins: {
-          legend: {
-            labels: {
-              color: '#C9CDD4'
-            }
-          }
-        }
-      }
-    });
-    
-    // 平滑滚动
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-          });
-          
-          // 关闭移动端菜单
-          if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-          }
-        }
-      });
-    });
-  </script>
-</body>
-</html>    
+    }
