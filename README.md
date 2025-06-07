@@ -1,4 +1,5 @@
 # 洛谷数据生成器
+ [![Page Views Count](https://badges.toozhao.com/badges/01JAM3BQ1140S4Q3J54K61VDSW/green.svg)](https://badges.toozhao.com/stats/01JAM3BQ1140S4Q3J54K61VDSW "Get your own page views count badge on badges.toozhao.com") 
 ### Some Tools for Data_Create
 
 [CYaRon教程](https://www.luogu.me/article/6uiax10m) by [RainCQwQ](https://www.luogu.me/user/952635)
